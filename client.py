@@ -1,6 +1,6 @@
 import socket
 
-HOST = '192.168.10.14'  # Replace with the IP of the server
+HOST = '0.0.0.0'  # Replace with the IP of the server
 PORT = 8888
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
