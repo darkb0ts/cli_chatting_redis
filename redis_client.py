@@ -2,7 +2,7 @@ import threading
 import redis
 from redis_server import R
 
-def send_message(name):
+def send_message(name): #send message 
     while True:
         try:
             message = input(f"{name}: ")
@@ -11,7 +11,7 @@ def send_message(name):
             print("Error: Could not connect to Redis server.")
             break
 
-def receive_messages(name):
+def receive_messages(name): #recieve message
     p = R.pubsub()
     p.subscribe('chat')
 
